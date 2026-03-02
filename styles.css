@@ -8,15 +8,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;700&display=swap');
 
-ASLA
+
 
 body{
-    margin: 0px;
+    margin: 0;
     font-family: 'Inter', sans-serif;
     background: #F2AE80;
     line-height: 1.2;
     -webkit-font-smoothing: antialiased;
     letter-spacing: 0.5px;
+}
+
+.temaClaro {
+  margin: 0;
 }
 
 .desktop {
