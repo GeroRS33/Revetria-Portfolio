@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Revetria´s Portfolio</title>
+  <link rel="icon" type="image/png" href="Imgs/Iconos/favicon.png">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="temaClaro paginaHome">
+  <div id="headerContenedor"></div>
+
+  <main class="main">
+    <section class="hero" aria-label="Presentación">
+      <img class="heroFoto" src="Imgs/RetratoPrincipal2.jpg" alt="Foto de Gero" />
+
+      <!-- ========================= -->
+      <!-- ===== MOBILE/TABLET ===== -->
+      <!-- ========================= -->
+      <div class="mobile">
+        <div class="heroTexto">
+          <p class="heroHola">Hola, soy</p>
+          <h1 class="heroNombre">Gero</h1>
+          <p class="heroSub">Y me apasiona el diseño.</p>
+        </div>
+
+        <img class="estrella estrella1" src="Imgs/Estrella.svg" alt="" aria-hidden="true">
+        <img class="estrella estrella2" src="Imgs/Estrella.svg" alt="" aria-hidden="true">
+        <img class="estrella estrella3" src="Imgs/Estrella.svg" alt="" aria-hidden="true">
+      </div>
+
+      <!-- =================== -->
+      <!-- ===== DESKTOP ===== -->
+      <!-- =================== -->
+      <div class="desktop homeDesktop">
+        <div class="homeGrid">
+          <!-- IZQ -->
+          <div class="homeLeft">
+            <p class="homeHola textReveal">Hola, soy</p>
+            <h1 class="homeNombre textReveal">Gero</h1>
+            <p class="homeTagline textReveal">Y el Diseño es lo que <strong><em>me mueve.</em></strong> </p>
+
+            <p class="homeEstudio">
+              Estudio <strong>Diseño Multimedia</strong><br>
+              en la <strong>Universidad ORT Uruguay</strong>.
+            </p>
+          </div>
+
+          <!-- DER -->
+          <div class="homeRight">
+            <p class="homeRightText">
+              Me encuentro en <em>constante formación</em>, desarrollando una mirada estratégica
+              sobre el <strong>diseño</strong> y las <strong>experiencias digitales</strong>.
+            </p>
+          </div>
+        </div>
+
+        <!-- estrellas decorativas del desktop -->
+        <img class="homeStar homeStarA" src="Imgs/Estrella.svg" alt="" aria-hidden="true">
+        <img class="homeStar homeStarB" src="Imgs/Estrella.svg" alt="" aria-hidden="true">
+        <img class="homeStar homeStarC" src="Imgs/Estrella.svg" alt="" aria-hidden="true">
+        <img class="homeStar homeStarD" src="Imgs/Estrella.svg" alt="" aria-hidden="true">
+      </div>
+
+      <!-- ✅ EXISTE EN MOBILE Y DESKTOP -->
+      <a class="btnPortfolio" href="proyectos.html">Conoce mi Portfolio</a>
+
+      <!-- ✅ EXISTE EN MOBILE Y DESKTOP -->
+      <div class="socialBar">
+        <a class="socialBtn delay1" href="https://www.linkedin.com/in/gerónimo-revetria-12a973333/" target="_blank" aria-label="LinkedIn">
+          <svg class="socialIcon" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+        </a>
+
+        <a class="socialBtn delay2" href="https://www.behance.net/gernimorevetria" target="_blank" aria-label="Behance">
+          <svg class="socialIcon" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M8.8 11.3c.9-.5 1.4-1.2 1.4-2.2 0-2-1.4-3.1-4-3.1H2v14h4.7c3.2 0 5-1.4 5-4 0-1.8-.9-3-2.9-3.7zM4.2 7.8h2c1.1 0 1.7.4 1.7 1.3 0 1-.7 1.4-1.9 1.4h-1.8V7.8zm2.3 10.4H4.2v-5h2.2c1.6 0 2.6.6 2.6 2.4 0 1.8-1 2.6-2.5 2.6zM20.2 10c-3 0-4.9 2-4.9 5.2 0 3.3 1.9 5.2 5.1 5.2 2.3 0 3.9-1 4.4-2.9h-2.2c-.3.8-1 1.2-2.1 1.2-1.5 0-2.3-.8-2.4-2.4H25c.1-3.8-1.6-6.3-4.8-6.3zm-2.2 4.7c.2-1.4 1-2.1 2.2-2.1 1.3 0 2.1.7 2.1 2.1h-4.3zM17.3 7.1h5v1.6h-5V7.1z"/>
+          </svg>
+        </a>
+      </div>
+
+      <a href="mailto:gerorevetria@gmail.com" class="contactameBtn">
+        Contacto por Mail
+        <div class="icon">
+          <svg
+            height="26"
+            width="26"
+            viewBox="0 0 24 24"
+          >
+            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 
+            1.1.9 2 2 2h16c1.1 0 2-.9 
+            2-2V6c0-1.1-.9-2-2-2zm0 
+            4-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+        </div>
+      </a>
+
+    </section>
+  </main>
+
+  <footer class="miniFooter">
+    <p>
+      © <span id="anioActual"></span> Gerónimo Revetria — Todos los derechos reservados.
+    </p>
+  </footer>
+
+  <script src="header.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proyectos / Portfolio</title>
+  <link rel="icon" type="image/png" href="Imgs/Iconos/favicon.png">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="temaOscuro paginaProyectos">
+  
+  <div id="loading" class="loading">
+    <img class="loadingStar" src="Imgs/Estrella.svg" alt="">
+  </div>
+
+
+  <!-- Header dinámico -->
+  <div id="headerContenedor"></div>
+
+  <button class="btnBack" onclick="history.back()" aria-label="Volver">
+    <img src="Imgs/Iconos/back.svg" alt="">
+  </button>
+
+  <main class="mainProyectos">
+
+    <section class="proyectos">
+
+      <!-- TITULADO -->
+      <div class="pageHero">
+
+        <h1 class="pageHeroTitle" id="tituloProyectos">Portfolio</h1>
+
+        <p class="pageHeroText">
+          Proyectos desarrollados en el ámbito académico y profesional,
+          combinando formación, práctica y exploración personal.
+        </p>
+
+        <img class="habilidadesBgStar" src="Imgs/Estrella.svg" alt="" aria-hidden="true">
+
+
+      </div>
+
+      <!-- GRID dinámico -->
+      <div class="proyectosGrid" id="proyectosGrid"></div>
+
+    </section>
+
+  </main>
+
+  <footer class="miniFooter">
+    <p>
+      © <span id="anioActual"></span> Gerónimo Revetria — Todos los derechos reservados.
+    </p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="header.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

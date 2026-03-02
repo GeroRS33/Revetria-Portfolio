@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Detalle / Portfolio</title>
+  <link rel="icon" type="image/png" href="Imgs/Iconos/favicon.png">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="temaOscuro paginaDetalle">
+  
+  <div id="loading" class="loading">
+    <img class="loadingStar" src="Imgs/Estrella.svg" alt="">
+  </div>
+
+
+
+  <a id="btnBehance" class="btnBehance" href="" target="_blank">
+    <span class="btnText">Proyecto Completo en</span>
+    <span class="btnBe">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <path fill="white" d="M8.8 11.3c.9-.5 1.4-1.2 1.4-2.2 0-2-1.4-3.1-4-3.1H2v14h4.7c3.2 0 5-1.4 5-4 0-1.8-.9-3-2.9-3.7zM4.2 7.8h2c1.1 0 1.7.4 1.7 1.3 0 1-.7 1.4-1.9 1.4h-1.8V7.8zm2.3 10.4H4.2v-5h2.2c1.6 0 2.6.6 2.6 2.4 0 1.8-1 2.6-2.5 2.6zM20.2 10c-3 0-4.9 2-4.9 5.2 0 3.3 1.9 5.2 5.1 5.2 2.3 0 3.9-1 4.4-2.9h-2.2c-.3.8-1 1.2-2.1 1.2-1.5 0-2.3-.8-2.4-2.4H25c.1-3.8-1.6-6.3-4.8-6.3zm-2.2 4.7c.2-1.4 1-2.1 2.2-2.1 1.3 0 2.1.7 2.1 2.1h-4.3zM17.3 7.1h5v1.6h-5V7.1z"/>
+      </svg>
+    </span>
+  </a>
+
+    <!-- BADGE PROGRAMAS (no clickeable) -->
+  <div id="badgeProgramas" class="badgeProgramas" aria-label="Programas usados">
+    <div class="badgeProgramasInner" id="badgeProgramasInner"></div>
+  </div>
+
+
+
+  <!-- LIGHTBOX (Zoom imágenes) -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button class="lightboxClose" type="button" aria-label="Cerrar">×</button>
+
+  <figure class="lightboxFigure" role="dialog" aria-modal="true">
+    <img id="lightboxImg" class="lightboxImg" src="" alt="">
+    <figcaption id="lightboxCaption" class="lightboxCaption"></figcaption>
+  </figure>
+</div>
+
+
+  <!-- Header dinámico -->
+  <div id="headerContenedor"></div>
+
+  <button class="btnBack" onclick="history.back()" aria-label="Volver">
+    <img src="Imgs/Iconos/back.svg" alt="">
+  </button>
+
+  <main class="mainDetalle">
+
+    <section class="detalle">
+
+      <!-- TITULADO -->
+      <div class="pageHero pageHeroDetalle">
+
+        <img class="pageHeroStarBig starLeft" src="Imgs/Estrella.svg" alt="">
+        <img class="pageHeroStarBig starCenter" src="Imgs/EstrellaNaranja.svg" alt="">
+        <img class="pageHeroStarBig starRight" src="Imgs/Estrella.svg" alt="">
+
+        <h1 class="pageHeroTitle" id="detalleTitulo"></h1>
+
+        <p class="pageHeroText" id="detalleSubtitulo"></p>
+
+      </div>
+
+      <!-- Imagen principal -->
+      <div class="detalleHero" id="detalleHero"></div>
+
+      <!-- Grid imágenes -->
+      <div class="detalleGrid" id="detalleGrid"></div>
+
+    </section>
+
+  </main>
+
+  <footer class="miniFooter">
+    <p>
+      © <span id="anioActual"></span> Gerónimo Revetria — Todos los derechos reservados.
+    </p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="header.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
