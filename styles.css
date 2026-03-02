@@ -208,7 +208,7 @@ body{
   position: absolute;
   left: 24px;
   right: 24px;
-  top: 400px;
+  top: 300px;
   color: white;
   z-index: 2;
   text-shadow: -2px -1px 4px black;
@@ -238,7 +238,7 @@ body{
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 180px;
+  bottom: 220px;
 
   z-index: 1000;
   margin: auto;
